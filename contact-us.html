@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Huastequita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #444444;
+            color: #F9EFEB;
+        }
+        .navbar {
+            background-color: #5F2C22;
+        }
+        .menu-section {
+            padding: 80px 0;
+            background-color: #444444;
+        }
+        .contact-info {
+            padding: 80px 0;
+            background-color: #444444;
+        }
+        .contact-info h3 {
+            color: #CA5C46;
+        }
+        .contact-info h4 {
+            color: #CA5C46;
+            padding-top: 20px;
+        }
+        .contact-info p {
+            color: #F9EFEB;
+        }
+        .contact-info a {
+            color: #F9EFEB;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .google-form {
+            margin-top: 30px;
+            background-color: #5F2C22;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Restaurante la Huastequita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/special-menu.html">Menú para eventos especiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ubicaciones.html">Ubicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Información de contacto -->
+    <section id="inicio" class="contact-info text-center">
+        <div class="container">
+        <h3>Contáctanos</h3>
+        <p><strong>Nombre del dueño:</strong>Beto</p>
+        <p><strong>Teléfono:</strong> +52 </p>
+        <p><strong>Correo Electrónico:</strong> <a href="mailto:juanperez@huastequita.com">beto</a></p>
+
+        <!-- Formulario de Google Forms -->
+        <h4>Formulario de Contacto para Eventos</h4>
+        <p>Si estás interesado en contratar nuestros servicios para tu evento, por favor completa el siguiente formulario:</p>
+
+        <div class="google-form">
+            <iframe src="https://docs.google.com/forms/d/e/yourformid/viewform?embedded=true" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

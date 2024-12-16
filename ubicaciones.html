@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Huastequita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #444444;
+            color: #F9EFEB;
+        }
+        .navbar {
+            background-color: #5F2C22;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        .menu-section {
+            padding: 80px 0;
+            background-color: #444444;
+        }
+
+        /* Estilos globales para mejorar la apariencia de las tarjetas */
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .btn {
+            background-color: #CA5C46;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #5F2C22;
+        }
+
+        /* Ajuste para tarjetas y mapa en dispositivos móviles */
+        @media (max-width: 768px) {
+            .card {
+                margin: 10px 0;
+            }
+
+            iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Restaurante la Huastequita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/special-menu.html">Menú para eventos especiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Ubicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact-us.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Sección del Menú -->
+<section id="inicio" class="menu-section text-center">
+    <div class="container">
+        <h2 class="text-center mb-4">Nuestras Ubicaciones</h2>
+        <!-- Mapa Embed de Google Maps -->
+        <iframe src="https://www.google.com/maps/d/embed?mid=1OqmPh3vNe8T8Xije-CEWHOuDCmyiqqo&ehbc=2E312F" width="640" height="480" id="google-map"></iframe>
+    </div>
+</section>
+
+<!-- Tarjetas para las ubicaciones -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <!-- Tarjeta para Xilitla -->
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card flex-fill" style="background-color: #5F2C22; color: #F9EFEB; border-radius: 10px; border: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                <div class="card-body">
+                    <h5 class="card-title">Ubicación en Xilitla</h5>
+                    <p class="card-text">Miguel Álvarez Acosta 101E, Xilitla, 79900 Xilitla, S.L.P.</p>
+                    <p class="card-text">Teléfono: +52 489 365 1349</p>
+                    <!-- Enlace al mapa de Google -->
+                    <a href="https://maps.app.goo.gl/QwyU8GPQXffZ4TAx8" target="_blank" class="btn btn-light">Ver en Google Maps</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta para Axtla de Terrazas -->
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card flex-fill" style="background-color: #5F2C22; color: #F9EFEB; border-radius: 10px; border: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                <div class="card-body">
+                    <h5 class="card-title">Ubicación en Axtla de Terrazas</h5>
+                    <p class="card-text">Miguel Hidalgo 6, Zona Centro, 79930 Axtla de Terrazas, S.L.P.</p>
+                    <a href="https://maps.app.goo.gl/JXgqkuvfFJ7grz7z6" target="_blank" class="btn btn-light">Ver en Google Maps</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta para La Taque -->
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card flex-fill" style="background-color: #5F2C22; color: #F9EFEB; border-radius: 10px; border: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                <div class="card-body">
+                    <h4 class="card-title">La Taque</h4>
+                    <p class="card-text">Miguel Hidalgo 6, Zona Centro, 79930 Axtla de Terrazas, S.L.P. (Aún lado de la Huastequita Axtla)</p>
+                    <!-- Enlace al mapa de Google -->
+                    <a href="" target="_blank" class="btn btn-light">Visita nuestro sitio web</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Huastequita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #444444;
+            color: #F9EFEB;
+        }
+
+        /* Estilos para la imagen hero */
+        .hero-image {
+            height: 100vh;
+            background-image: url('/src/images.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilo para el título */
+        .hero-image h1 {
+            font-size: 4rem; /* Aumenta el tamaño del título */
+            font-weight: bold;
+            text-transform: uppercase; /* Pone el texto en mayúsculas */
+            color: #CA5C46; /* Color dorado que resalta sobre el fondo oscuro */
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.8); /* Sombra intensa */
+            letter-spacing: 2px; /* Espaciado entre letras */
+        }
+
+        /* Estilo para el subtítulo */
+        .hero-image p {
+            font-size: 1.5rem; /* Ajusta el tamaño del subtítulo */
+            font-weight: 300;
+            color: #5F2C22; /* Mismo color dorado para mantener la consistencia */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.6); /* Sombra sutil */
+            letter-spacing: 1px; /* Espaciado entre letras */
+        }
+
+        .gallery-section {
+            padding: 50px 0;
+        }
+
+        .gallery-image {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar {
+            background-color: #5F2C22;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Estilos para el contenido oculto inicialmente */
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px); /* Desplaza hacia abajo */
+            transition: opacity 0.8s ease, transform 0.8s ease; /* Animación suave */
+        }
+
+        /* Estilos para mostrar el contenido */
+        .visible {
+            opacity: 1;
+            transform: translateY(0); /* Vuelve a su posición original */
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Restaurante la Huastequita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/special-menu.html">Menú para eventos especiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ubicaciones.html">Ubicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact-us.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Imagen Hero de Pantalla Completa -->
+    <section id="inicio" class="hero-image">
+        <div class="text-center">
+            <h1 class="display-3">Restaurante la Huastequita</h1>
+            <p class="lead">Sabor, Tradición y Pasión Huasteca</p>
+        </div>
+    </section>
+
+    <!-- Sección de Historia y Galería -->
+    <section id="sobre-nosotros" class="gallery-section container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-white">
+                <h2 class="mb-4">Nuestra Historia</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <img src="/src/images (1).jpg" alt="Galería 1" class="img-fluid gallery-image">
+                    </div>
+                    <div class="col-6">
+                        <img src="/src/images (1).jpg" alt="Galería 1" class="img-fluid gallery-image">
+                    </div>
+                    <div class="col-6">
+                        <img src="/src/images (1).jpg" alt="Galería 1" class="img-fluid gallery-image">
+                    </div>
+                    <div class="col-6">
+                        <img src="/src/images (1).jpg" alt="Galería 1" class="img-fluid gallery-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS y Dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome para el ícono de flecha (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Efecto de animación para las secciones
+        const sections = document.querySelectorAll('.gallery-section, #sobre-nosotros'); // Selecciona las secciones a animar.
+
+        // Detecta cuándo las secciones son visibles
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Añade la clase visible cuando se hace visible en el viewport
+                        observer.unobserve(entry.target); // Deja de observar una vez que es visible
+                    }
+                });
+            },
+            {
+                threshold: 0.2, // Activa cuando el 20% de la sección es visible
+            }
+        );
+
+        // Aplica el observador a cada sección seleccionada
+        sections.forEach(section => {
+            section.classList.add('hidden'); // Añade la clase hidden inicialmente
+            observer.observe(section); // Observa cada sección
+        });
+
+        // Efecto de cambio de color en la navbar al hacer scroll
+        const navbar = document.querySelector('.navbar');
+        const navbarBrand = document.querySelector('.navbar-brand');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) { // Cuando se ha desplazado más de 50px
+                navbar.classList.add('scrolled'); // Agregar clase 'scrolled' a la navbar
+            } else {
+                navbar.classList.remove('scrolled'); // Eliminar clase cuando el scroll es menor a 50px
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
