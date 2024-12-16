@@ -13,8 +13,8 @@
 
         /* Estilos para la imagen hero */
         .hero-image {
-            height: 100vh;
-            background-image: url('assets/images/images.jpg');
+            height: 100vh; /* Usa todo el alto de la pantalla */
+            background-image: url('src/images.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -25,23 +25,37 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        /* Estilo para el título */
+        /* Título responsivo */
         .hero-image h1 {
-            font-size: 4rem; /* Aumenta el tamaño del título */
+            font-size: 8vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
             font-weight: bold;
-            text-transform: uppercase; /* Pone el texto en mayúsculas */
-            color: #CA5C46; /* Color dorado que resalta sobre el fondo oscuro */
-            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.8); /* Sombra intensa */
-            letter-spacing: 2px; /* Espaciado entre letras */
+            text-transform: uppercase;
+            color: #CA5C46;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.8);
+            letter-spacing: 2px;
+            text-align: center; /* Asegura que el texto esté centrado */
         }
+
+        @media (max-width: 768px) {
+          /* Ajustes para pantallas pequeñas */
+          .hero-image h1 {
+              font-size: 10vw; /* Aumenta el tamaño del título en pantallas más pequeñas */
+          }
+
+          .hero-image p {
+              font-size: 4vw; /* Ajusta el tamaño del subtítulo */
+          }
+        }
+
 
         /* Estilo para el subtítulo */
         .hero-image p {
-            font-size: 1.5rem; /* Ajusta el tamaño del subtítulo */
+            font-size: 2.5vw; /* Ajusta el tamaño del subtítulo */
             font-weight: 300;
-            color: #5F2C22; /* Mismo color dorado para mantener la consistencia */
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.6); /* Sombra sutil */
-            letter-spacing: 1px; /* Espaciado entre letras */
+            color: #5F2C22;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.6);
+            letter-spacing: 1px;
+            text-align: center;
         }
 
         .gallery-section {
